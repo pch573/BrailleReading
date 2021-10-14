@@ -1,0 +1,49 @@
+2020-09-07
+1. 데이터 새로 수정
+2. 중성 13,23 이면 23일때 앞에 검사
+3. index가 0일때 중성이 오면 'ㅇ'붙임
+4. 언어가 중성 종성으로 끝나고 초성이 오지 않으면 'ㅇ' 붙힘
+
+2020-09-07
+
+ㅆ,ㅖ 예외처리 완료 구분문자인 33추가
+
+2020-09-15
+
+약어추가 후 예외처리 완료
+
+2020-09-18
+
+2가지 tts 완성
+1. window는 window환경에서만 가능
+
+2.gtts는 구글 API로 mp3저장하여 재생하는 방식
+필요한 라이브 러리
+pip install gtts #tts 기능 이용
+pip install pygame #파이썬 내에서 mp3재생
+pip install mutagen #mp3 재생 길이 확인
+
+bat파일 생성
+오류 날 경우
+cmd창에서 파이썬 pip 명령어가 되지 않을경우가 크다
+파이썬 자체가 설치 되지 않았을 경우
+폴더 위치가 다를 경우
+-------> 안되면 아나콘다 prompt에서 install 실행
+
+2020-09-25
+기계학습단 패치완료
+
+아나콘다깔려있으면 prompt에서
+conda install tensorflow, conda install keras깔고
+아나콘다없으면 cmd에서 pip install 로 패키지 다운받아봐용
+파이참깔려잇는데에 import keras 한후 실행 해봐요 Using TensorFlow backend.라고 결과뜨면 있으면 둘다 설치완료
+
+실행과정
+1. Translation.py에서 test = deeplearning.stringmaker()을 실행하여 기계학습된 모델사용
+2. deeplearing.py에서 하나씩 매칭후에 마지막코드 name.append(int(pre_ans_str))하고 name을 return함
+2. return해서 받은 test로 점자 해석 진행
+
+꼭 폴더 경로지정!
+1.caltech_dir
+2.model = load_model
+
